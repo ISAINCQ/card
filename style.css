@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+body{
+    max-width: 1440px;
+    background: hsl(217, 54%, 11%);
+}
+
+.descp, .infoData, .dataUser, .ethCont, .clockCont{
+    display: flex;
+}
+
+.card{
+    width: 325px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsl(216, 50%, 16%);
+    border-radius: 5%;
+}
+.efect{
+    position: relative;
+}
+.contSvg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 99%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contSvg:hover{
+    opacity: 0.4;
+    background: hsl(178, 100%, 50%);
+    border-radius: 5%;
+    cursor: pointer;
+}
+.descp{
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+.infoData{
+    justify-content: space-between;
+}
+.ethCont, .clockCont{
+    gap: 8px;
+}
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+p{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+.img_card{
+    width: 100%;
+    border-radius: 5%;
+}
+h1:hover, .nombreUser:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.dataUser{
+    align-items: center;
+    gap: 20px;
+}
+.nombreUser{
+    font-weight: 400;
+    transition: all 0.3s;
+}
+.eth{
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+@media screen and (max-width: 375px) {
+    .card{
+        width: 280px;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+
+    body{
+        padding: 20px;
+    }
+}
